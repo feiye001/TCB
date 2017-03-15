@@ -1,0 +1,165 @@
+@charset"utf-8";
+*{margin:0;padding:0;font-family: "微软雅黑";font-size: 12px;}
+a{text-decoration: none;color: #666666;}
+ul li {list-style: none;}
+body{font: 12px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	width: 100%;
+	color: #000;
+	background-color: #fff;
+	}
+
+
+.city{
+	left: 115px;
+	top: 26px;
+	opacity: 1;
+	display: block;
+	background: #fbfbfb;
+	font-weight: 12px/1.5 'Tahoma','simsun',Arial,sans-serif;
+	position: absolute;
+	width: 460px;
+	z-index: 111111;
+	color: #000;
+}
+.city_mi{
+	border: 1px solid #cfcfcf;
+	padding: 7px 0;
+}
+.city_mi h3{
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	padding:  0 10px;
+	position: relative;
+	font-size: 100%;
+}
+.city_mi h3 .city_close{
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 55px;
+	background: url(../images/cityclose.png) no-repeat 0 -7px;
+}
+
+.city_mi .city_list{
+	background: #fff;
+	border: 1px solid #e8e8e8;
+	margin: 5px 10px 0;
+	padding: 12px 12px 0;
+}
+..city_mi .city_list ul{
+	display: block;
+
+}
+.city_mi .city_list ul li{
+	margin-bottom: 10px;
+	padding-left: 40px;
+	position: relative;
+	vertical-align: top;
+}
+.city_mi .city_list ul li h4{
+	color: #666;
+	left: 0;
+	position: absolute;
+	top: 2px;
+}
+.city_mi .city_list ul li p{
+	line-height: 18px;
+
+}
+.city_mi .city_list ul li p a{
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	margin: 0 10px 2px 0;
+	color: #000;
+}
+
+.city_mi .city_list ul li .pin{
+	border-bottom: 1px solid #d9d9d9;
+	height: 23px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.city_mi .city_list ul li .pinyin{
+	background-position: -441px -7px;
+	bottom: -1px;
+	color: #f60;
+	font-weight: bold;
+	position: relative;
+	height: 23px;
+	background: url(../images/cityclose.png) no-repeat -443px -10px;
+}
+.city_mi .city_list ul li .pinyin a{
+	float: left;
+	font-size: 14px;
+	font-family: simsun;
+	height: 23px;
+	width: 14px;
+	line-height: 20px;
+	text-align: center;
+	text-transform:uppercase; 
+}
+.city_mi .city_list ul li .pin_up{
+	height: 50px;
+}
+.city_mi .city_list ul li .pin_up p{
+	float: left;
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+}
+
+
+/*区县列表*/
+.city1{
+	left: 225px;
+	top: 1485px;
+	opacity: 1;
+	display: block;
+	background: #fbfbfb;
+	font-weight: 12px/1.5 'Tahoma','simsun',Arial,sans-serif;
+	position: absolute;
+	width: 460px;
+	z-index: 111111;
+	color: #000;
+	/*display: none;*/
+
+}
+.city_mi1{
+	border: 1px solid #cfcfcf;
+	padding: 7px 0;
+}
+.city_mi1 h3{
+	font-weight: bold;
+	height: 20px;
+	padding:  0 10px;
+	position: relative;
+	font-size: 14px;
+	color: #666;
+	margin: 0px;
+}
+.city_mi1 h3 .city_close1{
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 55px;
+	background: url(../images/cityclose.png) no-repeat 0 -7px;
+}
+.city_mi1 .city_list1{
+	background: #fff;
+	border: 1px solid #e8e8e8;
+	margin: 5px 10px 0;
+	padding: 12px 12px 0;
+	height: 100px;
+}

@@ -1,0 +1,91 @@
+{
+  "errno": 0,
+  "errmsg": "OK",
+  "result": [
+    {
+      "product_id": "32098",
+      "model_name": "iPhone 5S",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 899,
+      "com_price": "2288",
+      "model_id": "5",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t019734d76f4d22f3b7.jpg",
+        "big": "http://p0.qhmsg.com/t0123f382ad6d5c9862.jpg",
+        "mid": "http://p0.qhmsg.com/t011a91ea5c069c8790.jpg",
+        "min": "http://p0.qhmsg.com/t0176906b2fcc1fc734.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "32099",
+      "model_name": "iPhone 5S",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 950,
+      "com_price": "2288",
+      "model_id": "5",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t0193f07b5d6d52bdb0.jpg",
+        "big": "http://p0.qhmsg.com/t0179aeee5ae2f319a0.jpg",
+        "mid": "http://p0.qhmsg.com/t01f5dee6e5e5e5050c.jpg",
+        "min": "http://p0.qhmsg.com/t016d466515d7006de7.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "32224",
+      "model_name": "iPhone 6",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 2050,
+      "com_price": "5288",
+      "model_id": "97",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01042f0e1ad3db884a.png",
+        "big": "http://p0.qhmsg.com/t01f5575883be765e32.png",
+        "mid": "http://p0.qhmsg.com/t01ca68a181942f676d.png",
+        "min": "http://p0.qhmsg.com/t016ef94425a00bd05a.png"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "32103",
+      "model_name": "iPhone 6 Plus",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 2450,
+      "com_price": "6088",
+      "model_id": "98",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t015987d004d761d59c.jpg",
+        "big": "http://p0.qhmsg.com/t012356c64c53a61eb9.jpg",
+        "mid": "http://p0.qhmsg.com/t010401a0742ed28d54.jpg",
+        "min": "http://p0.qhmsg.com/t01797683ee55e0cafa.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "32101",
+      "model_name": "iPhone 6",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 2199,
+      "com_price": "5288",
+      "model_id": "97",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01042f0e1ad3db884a.png",
+        "big": "http://p0.qhmsg.com/t01f5575883be765e32.png",
+        "mid": "http://p0.qhmsg.com/t01ca68a181942f676d.png",
+        "min": "http://p0.qhmsg.com/t016ef94425a00bd05a.png"
+      },
+      "mer_name": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>	
+</head>
+<body>
+<script type="text/javascript">
+	//请求发送函数
+	function sendJsonp(callbackName){
+		var tag = document.createElement("script");
+		tag.src="http://bang.360.cn/aj/get_area/?citycode=shen_yang&callback="+callbackName;
+		//console.log(callbackName);
+		document.body.appendChild(tag);
+	};
+
+	// 回调函数
+	function jsonpCallback001(data){
+		console.log(data);
+	}
+	//发送请求
+	sendJsonp("jsonpCallback001");
+</script>
+</body>
+</html>

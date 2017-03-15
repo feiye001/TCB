@@ -1,0 +1,139 @@
+<!--二级菜单导入数据第一板块-->
+<script type="text/html" id="stuListTem">
+	<%for(var n in result){%>
+		<div class="row_left"><%=result[n].name%></div>
+		<div class="row_right">
+			<%for(var i in result[n].list){%>
+				<a><%=result[n].list[i].name%></a>
+			<%}%>
+		</div>
+	<%}%>
+</script>
+
+<!-- 
+第二个板块 -->
+<script type="text/html" id="hot">
+	<div class="disNone1_left">其他问题
+	</div>
+	<div class="disNone1_right">
+		<%for(var i in result.hot){%>
+			<a><%=result.hot[i].name%></a>
+		<%}%>
+	</div>
+</script>
+
+
+
+<script type="text/html" id="hot1">
+	<div class="disNone1_left">
+						其他问题
+						</div>
+	<div class="disNone1_right">
+		<%for(var i in result.other){%>
+			<a><%=result.other[i].name%></a>
+		<%}%>
+	</div>
+</script>
+
+
+<!-- 第三个板块 -->
+<script type="text/html" id="three">
+	<%for(var i in result){%>
+		<a><%=result[i].name%></a>
+	<%}%>
+</script>
+
+
+<!-- 第四个板块 -->
+<script type="text/html" id="four">
+	<%for(var i in result){%>
+		<a><%=result[i]%></a>
+	<%}%>
+</script>
+
+
+<!--手机导入1-->
+<script type="text/html" id="phone1">
+	<a href="#" id="gaojia"></a>
+	<%for(var i in result){%>
+		<a href="#">
+			<dl>
+				<dt>
+					<img src="<%=result[i].img_url%>"/>
+				</dt>
+				<dd><%=result[i].model_alis%></dd>
+			</dl>
+		</a>
+	<%}%>
+</script>
+
+<!--手机导入2-->
+<script type="text/html" id="phone2">
+	<a href="#" id="zhuan"></a>
+	<%for(var i in result){%>
+		<a href="#">
+			<dl>
+				<dt class="big">
+					<img src="<%=result[i].thum_img.big%>"/>
+				</dt>
+				<dd><%=result[i].brand_name%><%=result[i].model_name%></dd>
+				<span>￥<%=result[i].price%></span>
+			</dl>
+		</a>
+	<%}%>
+</script>
+
+<!--城市导入-->
+<script type="text/html" id="cityIn">
+	<h4>热门</h4>
+	<p>
+	<%for(var i in result.hotcity){%>
+		<a href="##" class="show_city show_city_all"><%=result.hotcity[i].name%></a>
+	<%}%>
+	</p>
+</script>
+
+<script type="text/html" id="cityInP">
+	<h4>拼音</h4>
+	<div class="pinyin">
+	<%for(var i in result.citylist){%>
+		<a href="##" class="pinyin_a"><%=i%></a>
+	<%}%>
+	</div>
+	<%for(var j in result.citylist){%>
+ 		<div class="pin_up">
+ 			<%for(var n in result.citylist[j]){%>
+ 				<p class="city_name1 show_city_all"><%=(result.citylist[j])[n].name%></p>
+ 			<%}%>
+ 		</div>
+	<%}%>
+</script>
+
+
+<!-- 店铺数据导入 -->
+<script type="text/html" id="shop_shuju">
+	<%for(var i in shop_data){%>
+<div class="jianjie_in">
+	<div class="jianjie_in_img"><img src="<%=shop_data[i].shop_ico%>"></div>
+	<div class="jianjie_in_wenzi">
+		<h3><a href="#"><%=shop_data[i].shop_name%></a></h3>
+		<div class="shop_grade">店铺等级：<a href="#"><span class="shop_grade_corn"></span></a>
+		</div><br/>
+		<div class="zhuguan">主营：<%=shop_data[i].main%></div><br/>
+		<div class="adress">地址：<%=shop_data[i].addr_detail%></div>
+		<div class="zhongjian">
+			<div><img src="../images/money.png" />先行赔付</div>
+			<div><img src="../images/money1.png" />同城帮认证</div>
+			<div><span>人气：</span><%=shop_data[i].shop_visit%>次浏览</div>
+		</div>
+	</div>
+	<div class="ianjie_in_shop">进入店铺</div>
+</div>
+	<%}%>
+</script>
+<!-- 区县模板 -->
+<script type="text/html" id="show_city_change">
+	<%for(var n in result){%>
+        <a><%=result[n]%></a>
+   <%}%>
+</script>

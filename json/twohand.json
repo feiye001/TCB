@@ -1,0 +1,91 @@
+{
+  "errno": 0,
+  "errmsg": "OK",
+  "result": [
+    {
+      "product_id": "32002",
+      "model_name": "iPhone 5S",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 1250,
+      "com_price": "2288",
+      "model_id": "5",
+      "mer_id": "9",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t0193f07b5d6d52bdb0.jpg",
+        "big": "http://p0.qhmsg.com/t0179aeee5ae2f319a0.jpg",
+        "mid": "http://p0.qhmsg.com/t01f5dee6e5e5e5050c.jpg",
+        "min": "http://p0.qhmsg.com/t016d466515d7006de7.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "32001",
+      "model_name": "Galaxy S7 edge g9350",
+      "brand_id": "1",
+      "brand_name": "三星",
+      "price": 3680,
+      "com_price": "5688",
+      "model_id": "499",
+      "mer_id": "9",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01d2ab71837c7874a1.png",
+        "big": "http://p0.qhmsg.com/t01702e44154b12ed11.png",
+        "mid": "http://p0.qhmsg.com/t014f0c8eaea5f4502f.png",
+        "min": "http://p0.qhmsg.com/t01dcf16b651323078d.png"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "31998",
+      "model_name": "Galaxy S7 edge g9350",
+      "brand_id": "1",
+      "brand_name": "三星",
+      "price": 3350,
+      "com_price": "5688",
+      "model_id": "499",
+      "mer_id": "9",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01d2ab71837c7874a1.png",
+        "big": "http://p0.qhmsg.com/t01702e44154b12ed11.png",
+        "mid": "http://p0.qhmsg.com/t014f0c8eaea5f4502f.png",
+        "min": "http://p0.qhmsg.com/t01dcf16b651323078d.png"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "31997",
+      "model_name": "iPhone 6S",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 2750,
+      "com_price": "6088",
+      "model_id": "261",
+      "mer_id": "9",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01ac7e90dc7b722260.jpg",
+        "big": "http://p0.qhmsg.com/t01424493481b305dfc.jpg",
+        "mid": "http://p0.qhmsg.com/t01e89c9ebdece92e9d.jpg",
+        "min": "http://p0.qhmsg.com/t0156b5af6f05d75325.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "31996",
+      "model_name": "Find 7 X9000",
+      "brand_id": "22",
+      "brand_name": "oppo",
+      "price": 510,
+      "com_price": "",
+      "model_id": "260",
+      "mer_id": "9",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01ab71aaa33fd568c6.jpg",
+        "big": "http://p0.qhmsg.com/t01afdc6a6afabd9b44.jpg",
+        "mid": "http://p0.qhmsg.com/t01604874f35216ae54.jpg",
+        "min": "http://p0.qhmsg.com/t01c4e52ffe4d8c1811.jpg"
+      },
+      "mer_name": ""
+    }
+  ]
+}

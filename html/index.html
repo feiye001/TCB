@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script type="text/javascript"src="../js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="../js/baiduTemplate.js"></script>
+	<script type="text/javascript" src="../js/jq.snow.js"></script>
+	<!-- 地图引用 -->
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=06fb75f531ce19fd2af711465487d07a&&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar,AMap.Autocomplete,AMap.Icon"></script>
+
+</head>
+<body>
+<!--div回到顶部-->
+<div class="returnTop">
+	<a href="#" style=""></a>
+</div>
+<!--咨询-->
+<div class="zixun">
+	<div class="zixun_in">
+		<a href="#" id="zixun_qq">在线咨询</a>
+	</div>
+</div>
+<!--header-->
+<div class="topbar" id="doc-topbar">
+	<div class="in">
+		<div class="in-ul">
+			<ul>
+				<li>
+					<span class="topbar-city" id="city_name">沈阳</span>
+					<a class="topbar-citychange" href="#" id="top_bar">[切换城市]</a>
+				</li>
+				<li class="last">
+					<a href="#" class="item">同城帮首页</a>
+				</li>
+			</ul>
+		</div>
+		<div class="u-info">
+			<ul>
+				<li>
+					<a href="#" class="user-login item" id="deng_lu">登录</a>
+				</li>
+				<li>
+					<a href="#" class="zhuce" id="zhu_ce">注册</a>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li>
+					<span>客服电话：4000-399-360 / 010-53767360</span>
+				</li>
+				<li class="xiuli">
+					<span>客户服务</span>
+					<p>
+						<a href="#">帮助中心</a>
+						<a href="#">维修付款</a>
+					</p>
+				</li>
+				<li class="luntan">
+					<a href="#">论坛</a>
+				</li>
+				<li class="last">
+					<a href="#">投诉建议</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--nav菜单-->
+<div >
+	<div class="logoNav">
+		<div class="logo">
+			<a href="#"></a>
+		</div>
+		<div class="logoNext">
+			<ul>
+				<li><a href="#" class="firstAa">二手良品<img src="../images/hot.png"></a></li>
+				<li><a href="#">手机回收</a></li>
+				<li><a href="#">手机维修</a></li>
+				<li><a href="#">电脑维修</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">手机租用</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 二级菜单显示列表 -->
+<div class="lunboList">
+	<div class="lunboListA">
+		<ul>
+			<li>
+				<a href="#" class="hoveShow">修手机/Pad</a>
+			</li>
+			<li>
+				<a href="#" class="hoveShow">修电脑</a>
+			</li>
+			<li>
+				<a href="#" class="hoveShow">买手机</a>
+			</li>
+			<li>
+				<a href="" class="hoveShow">买二手机</a>
+			</li>
+		</ul>
+<!--隐藏菜单-->
+		<div class="displayNo">
+			<div class="display_Two">
+				<!-- 第一个隐藏模块 -->
+				<div class="disNone">
+					<div class="row" id="row_text"></div>
+				</div>
+				<!-- 第二个隐藏模块 -->
+				<div class="disNone1">
+					<div class="disNone1_up"></div>
+					<div class="disNone1_down"></div>
+				</div>
+				<!-- 第三个隐藏模块 -->
+				<div class="disNone2"></div>
+				<!-- 第四个隐藏模块 -->
+				<div class="disNone3"></div>
+			</div>
+		</div>
+		<!-- 箭头标识 -->
+		<span id="spanSet"></span>
+	</div>
+<!--轮播图图片插入部分-->
+	<div>
+		<div class="lunboTwo">
+			<div class="lunboOut">
+				<div class="lunboIn">
+					<a href="#"><img src="../images/banner1.jpg"></a>
+				</div>
+				<div class="lunboIn">
+					<a href="#"><img src="../images/banner2.png"></a>
+				</div>
+				<div class="lunboIn">
+					<a href="#"><img src="../images/banner3.jpg"></a>
+				</div>
+				<div class="lunboIn">
+					<a href="#"><img src="../images/banner4.png"></a>
+				</div>
+			</div>
+			<!--轮播图按钮圆点-->
+			<div class="lunbo_ctrl">
+				<span class="curcle"></span>
+				<span class="curcle"></span>
+				<span class="curcle"></span>
+				<span class="curcle"></span>
+			</div>
+		</div>
+	</div>
+<!--图片部分-->
+	<div class="imgAll">
+		<div class="imgAll_out">
+			<div class="imgAll_in">
+				<a href="#"><img src="../images/img1.jpg"></a>
+			</div>
+			<div class="imgAll_in">
+				<a href="#"><img src="../images/img2.jpg"></a>
+			</div>
+			<div class="imgAll_in">
+				<a href="#"><img src="../images/img3.jpg"></a>
+			</div>
+			<div class="imgAll_in">
+				<a href="#"><img src="../images/img4.jpg"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--热门手机回收-->
+<div class="hotAll">
+	<div class="hotAll_one">
+		<div class="inner">
+			<h2>热门手机回收</h2>
+			<a href="#">查看更多<img src="../images/left.png"></a>
+		</div>
+	</div>
+	<div class="hotAll_two">
+		<div class="hotAll_two_inner"></div>
+	</div>
+</div>
+<div class="hotAll">
+	<div class="hotAll_one">
+		<div class="inner">
+			<h2>二手良品精选</h2>
+			<a href="#">查看更多<img src="../images/left.png"></a>
+		</div>
+	</div>
+	<div class="hotAll_two">
+		<div id="hotAll_two_inner"></div>
+	</div>
+</div>
+<div class="shopWei">
+	<div class="shop_log">
+		<div class="shop_in"><span>到店维修</span></span></div>
+	</div>
+	<div class="shop_next">
+		<div class="shop_next_one">
+			<!--left-->
+			<div class="shop_next_one_left">
+				<div class="seacth">
+					<div class="seacth_left">
+						<div class="seacth_left_one">
+							<span>沈阳</span>
+							<span id="ggg"></span>
+						</div>
+						<div class="seacth_left_two">
+							<span>选择区县</span>
+							<span id="gg"></span>
+						</div>
+					</div>
+					<div class="seacth_right">
+						<form class="myForm">
+							<input type="text" placeholder="输入您的位置查找附近的商家"/>
+							<input type="submit"value="搜索"id="tijiao">
+						</form>
+						<span id="showXin">抱歉，没有找到您输入的位置，您可以试试其他地址</span>
+					</div>
+				</div>
+				<div class="navshow">
+					<div class="navshowIn">
+						<div><a href="#">默认排序</a></div>
+						<div><a href="#">按成交量</a></div>
+						<div><a href="#">按人气</a></div>
+						<div><input type="checkbox" /><a>先行赔付</a></div>
+						<div id="nenIn">
+							<span id="map"></span>
+							<span>地图模式</span>
+						</div>
+					</div>
+				</div>
+				<!-- 店铺简介 -->
+				<div class="jianjie"></div>
+				<!-- 分页显示 -->
+				<div class="navlan" id="navlan_all">
+				</div>
+			</div>
+			<!--right-->
+			<div class="daofour">
+				<div class="shang">商家好评榜</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num" id="ss">1</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu"><div class="num" id="zz">2</div></div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num" id="xx">3</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						 <p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num">4</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num">5</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num">6</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+				<div class="shang1">
+					<div class="xu">
+						 <div class="num">7</div>
+					</div> 
+					<div><img src="../images/rightimg.jpg"></div>
+					<div>
+						<a href="#" class="aa">连邦IT服务中心</a>
+						<p>1149条评论</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer-->
+<div class="footernav">
+	<div class="dan">
+		<ul>
+			<li>
+				<span class="gou1"></span>
+				<div>
+					<h3>购物指南</h3>
+					<a href="#">购物流程</a>
+					<a href="#">用户注册</a>
+					<a href="#">帮助文档</a>
+				</div>
+			</li>
+			<li>
+				<span class="gou2"></span>
+				<div>
+					<h3>支付方式</h3>
+					<a href="#">在线支付</a>
+					<a href="#">当面付款</a>
+				</div>
+			</li>
+			<li>
+				<span class="gou3"></span>
+				<div>
+					<h3>投诉建议</h3>
+					<a href="#">在线支付</a>
+				</div>
+			</li>
+			<li>
+				<span class="gou4"></span>
+				<div>
+					<h3>特色保障</h3>
+					<a href="#">360担保支付</a>
+				</div>
+			</li>
+			<li>
+				<span class="gou5"></span>
+				<div>
+					<h3>商家合作</h3>
+					<a href="#">加盟同城帮</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<p class="foo1">
+			<span>客服电话 : 4000-399-360 / 010-53767360</span>
+			<a href="">投诉建议</a>
+			<a href="#">网站地图</a>
+		</p>
+		<p class="foo2">Copyright &copy; 2005-2017 360.CN All Rights Reserved 360安全中心</p>
+		<p class="foo3">京ICP备08010314号-19  京公网安备110000000006号</p>
+	</div>
+</div>
+<!--登录界面-->
+<div id="zhe" class="zhe">
+	<div id="center_layouts" class="center_layoutl">
+		<div class="close">
+			<span id="x"  class="X">X</span>
+			<img src="../images/load.png">
+		</div>
+		<div  id="form_mis" class="forms_mis">
+			<form id="fo" class="fos">
+				<p><span>账号:</span><input type="text" placeholder="手机号/用户名/邮箱"/></p>
+				<p><span>密码:</span><input type="text" placeholder="请输入您的密码" /></p>
+				<p><input  type="checkbox" /><span>下次自动登录</span></p>
+				<p><input type="button" value="立即登录" /></p>
+				<p class="kind">
+					<span>其他账号登录</span>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</p>
+			</form>
+		</div>
+		<div class="forgets" id="forget">
+			<a href="#">注册新账号</a>
+			<a href="#">忘记密码?</a>
+		</div>
+	</div>
+</div>
+<!--注册界面-->
+<div id="zhePhone" class="zhePhone">
+	
+	<div id="phone_layouts" class="phone_layout">
+		<div class="close">
+			<span id="ponecl"  class="X">X</span>
+			<img src="../images/regis.png">
+		</div>
+		<div class="all_layouts">
+			<div class="left_layouts">
+				<p id="rephone"><span class="tu"></span><span>手机注册</span></p>
+				<p id="remail"><span class="tu"></span><span>邮箱注册</span></p>
+				<p><span>已有账号</span><a href="#">立即登录</a></p>
+			</div>
+			<div class="center_layout"></div>
+
+			<div class="right_layouts">
+				<div class="r_phone">
+					<span>手机号</span>
+					<input type="text" name="textname" />
+				</div>
+				<p class="texts">
+					<span>请输入您的手机号</span>
+				</p>
+				<div class="r_phone">
+					<span>验证码</span>
+					<input type="text" name="ma" />
+					<span class="yanzheng">gfdsg</span>
+					<a href="#">换一张</a>
+				</div>
+				<p class="texts">
+					<span>请输入图中的字母或数字，不区分大小写</span>
+				</p>
+				<div class="r_phone">
+					<span>校验码</span>
+					<input type="text"  class="yanText" />
+					<input type="button" class="btny" value="免费获取校验码" />
+				</div>
+				<p class="texts">
+					<span>请输入短信中6位数字校验码</span>
+					<a href="#">校验码常见问题</a>
+				</p>
+				<div class="r_phone">
+					<span>密码</span>
+					<input type="texxt" name="textname" />
+					</div>
+				<p class="texts">
+					<span>6-20个字符(区分大小写)</span>
+				</p>
+				<div>
+					<input type="button" value="马上注册"  class="reis_btn" />
+				</div>
+				<p class="texts">
+					<input type="checkbox"  checked="checked" />
+					<span>6-20个字符(区分大小写)
+						<a href="#">《360用户服务条款》</a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--邮箱注册的页面样式-->
+<div id="zhemail" class="zhemails">
+	<div id="mail_layouts" class="mail_layout">
+		<div class="close">
+			<span id="mailx"  class="X">X</span>
+			<img src="../images/regis.png">
+		</div>
+		<div class="all_layouts">
+			<div class="left_layouts">
+				<p id="you">
+					<span class="tu"></span>
+					<span>手机注册</span>
+				</p>
+				<p>
+					<span class="tu"></span>
+					<span>邮箱注册</span>
+				</p>
+				<p>
+					<span>已有账号</span>
+					<a href="#">立即登录</a>
+				</p>
+			</div>
+			<div class="centers_layout"></div>
+			<div class="right_layouts">
+				<div class="r_phone">
+					<span>邮箱</span>
+					<input type="text" name="textname" />
+				</div>
+				<p class="texts">
+					<span>请输入您的邮箱</span>
+				</p>
+				<div class="r_phone">
+					<span>验证码</span>
+					<input type="text" name="ma" />
+					<span class="yanzheng">gfdsg</span>
+					<a href="#">换一张</a>
+				</div>
+				<p class="texts">
+					<span>请输入图中的字母或数字，不区分大小写</span>
+				</p>
+				<div class="r_phone">
+					<span>密码</span>
+					<input type="texxt" name="textname" />
+				</div>
+				<p class="texts">
+					<span>6-20个字符(区分大小写)</span>
+				</p>
+				<div>
+					<input type="button" value="马上注册"  class="reis_btn" />
+				</div>
+				<p class="texts">
+					<input type="checkbox"  checked="checked" />
+					<span>6-20个字符(区分大小写)
+						<a href="#">《360用户服务条款》</a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--地图界面-->
+<div id="maps_zhe" class="map_zhe">
+	<div id="mapZhe" class="mapsZhe">
+		<div class="map_top">
+			<span>地图模式</span>
+			<span id="close_map">X</span>
+		</div>
+		<div id="map_img"></div>
+		<div id="map_num">
+			<span class="bei">1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span>7</span>
+			<span>8</span>
+			<span>9</span>
+			<span>10</span>
+			<span>下一页&gt;&gt;</span>
+		</div>
+	</div>
+</div>
+<!-- 城市 -->
+<div class="city">
+	<div class="city_mi">
+		<h3>城市列表
+			<span class="city_close"></span>
+		</h3>
+		<div class="city_list">
+			<ul>
+				<li id="city_list_hot"></li>
+				<li id="city_list_pin"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="city_down"></div>
+</div>
+<!-- 区县列表 -->
+<div class="city1">
+	<div class="city_mi1">
+		<h3>城市列表
+			<span class="city_close1"></span>
+		</h3>
+		<div class="city_list1"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/inset.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/pager.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>	
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=06fb75f531ce19fd2af711465487d07a&&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar,AMap.Autocomplete"></script>
+	<style type="text/css">
+	/*地图遮罩部分样式*/
+	*{margin:0;padding:0;font-family: "微软雅黑";font-size: 12px;}
+a{text-decoration: none;color: #666666;}
+ul li {list-style: none;}
+body{font: 12px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	width: 100%;
+	color: #000;
+	background-color: #fff;
+	}
+.map_zhe{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,0.5);
+	z-index: 3;
+	/*display: none;*/
+}
+.mapsZhe{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	width:900px;
+	height: 500px;
+	background-color: white; 
+}
+.map_top{
+	width: 900px;
+	height: 40px;
+	background-color: #FAFAFA;
+	line-height: 40px;
+}
+.map_top>span:first-of-type{
+	display: inline-block;
+	margin-left: 10px;
+	color: #999;
+	font-weight: bold;
+	font-size: 14px;
+}
+.map_top>span:last-of-type{
+	float: right;
+	font-size: 20px;
+	margin-right: 20px;
+	color: #999;
+}
+#map_img{
+	width: 900px;
+	height: 400px;
+	background-color: pink;
+}
+#map_num{
+	width: 900px;
+	height: 60px;
+	text-align: center;
+	line-height:60px; 
+}
+#map_num>span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	color: #ABABAB;
+	border:1px solid #ABABAB;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 10px;
+}
+#map_num>span:last-of-type{
+	width: 90px;
+}
+	</style>
+</head>
+<body>
+<!-- 城市搜索 -->
+
+<!--地图界面-->
+<div id="maps_zhe" class="map_zhe">
+城市：<input type="text" id="city_name" /><input type="button" value="搜索" id="search" />
+饭店：<input type="text" id="city_name1" /><input type="button" value="搜索" id="res" name="search" />
+	<div id="mapZhe" class="mapsZhe">
+		<div class="map_top">
+			<span>地图模式</span>
+			<span id="close_map">X</span>
+		</div>
+		<div id="map_img"></div>
+		<div id="map_num">
+			<span class="bei">1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span>7</span>
+			<span>8</span>
+			<span>9</span>
+			<span>10</span>
+			<span>下一页&gt;&gt;</span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	//创建地图对象
+	var map = new AMap.Map("map_img",{
+		resizeEnable: true,
+        zoom:11,
+        center: [116.397428,39.90923]
+	});
+	//语言设置
+	map.setLang("zhe_en");
+
+	var scale = new AMap.Scale(),
+	toolBar = new AMap.ToolBar(),
+	overView = new AMap.OverView();
+
+	//添加空尖到地图上
+	map.addControl(scale);
+	map.addControl(toolBar);
+	map.addControl(overView);
+
+
+
+	//使用setCity设置中心城市
+	document.getElementById('search').onclick=function(){
+		map.setCity(document.getElementById("city_name").value);
+	};
+	 // 设置缩放级别和中心点
+        //map.setZoomAndCenter(14, [116.205467, 39.907761]);
+       //map.setZoom
+       //map.setCenter
+
+       //位移
+       // map.panBy(50, 100);参数一是距离 参数二是像素
+       //移动到
+       //  map.panTo([116.405467, 39.907761]);
+     //自动完成提示
+     var input = new AMap.Autocomplete({
+     	input:"res"
+     });
+     //选中事件
+     AMap.event.addListener(input,"select",function(e){
+     	map.setZoomAndCenter(14,e.poi.location);
+     });
+     //marker
+     var mark1 = new AMap.Marker({
+     	map:map,
+     	position:[116.397428,39.90923]
+     });
+</script>
+</body>
+</html>

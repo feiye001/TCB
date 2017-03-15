@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>	
+	<link rel="stylesheet" type="text/css" href="../css/city.css">
+</head>
+<body>
+	<div class="city">
+		<div class="city_mi">
+			<h3>城市列表
+				<span class="city_close"></span>
+			</h3>
+			<div class="city_list">
+				<ul>
+					<li>
+						<h4>热门</h4>
+						<p>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+							<a href="#">北京</a>
+						</p>
+					</li>
+					<li>
+						<h4>拼音</h4>
+						<div class="pinyin">
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+							<a href="#">A</a>
+						</div>
+						<div class="pin_up">
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+							<p>沈阳</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="city_down"></div>
+	</div>
+
+	<div class="city1">
+		<div class="city_mi1">
+			<h3>城市列表
+				<span class="city_close1"></span>
+			</h3>
+			<div class="city_list1">
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
